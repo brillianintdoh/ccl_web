@@ -1,0 +1,20 @@
+{
+  "name": "ccl_web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "restart": "sudo service tomcat10 restart"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3",
+    "css-loader": "^7.1.2",
+    "htmx.org": "^1.9.12",
+    "style-loader": "^4.0.0",
+    "ts-loader": "^9.5.1"
+  }
+}
