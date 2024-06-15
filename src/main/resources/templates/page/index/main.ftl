@@ -9,11 +9,55 @@
         <script src="/js/boot.js"></script>
     </head>
     <body>
-        <div class="main" id="main_page">
-            <#include "/page/menu.ftl" encoding="UTF-8"/>
-
-            <#include "model.html" encoding="UTF-8"/>
-            <script src="/js/index.js"></script>
-        </div>
+        <#include "/page/menu.ftl" encoding="UTF-8"/>
+        <main id="main_page" class="main">
+            <div id="myCarousel" class="meun_car carousel slide mb-6" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" class="active" aria-current="true" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/img/main_1.jpg">
+                        <div class="container">
+                            <div class="carousel-caption text-start">
+                                <h1 class="text-black">한문 수업 복습</h1>
+                                <p class="opacity-75">학교 수업에서 나온 한문 수업을 복습해 봅시다</p>
+                                <p><a class="btn btn-lg btn-primary" href="#">복습하러 가기</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://via.placeholder.com/800x400" alt="Slide 2">
+                        <div class="container">
+                            <div class="carousel-caption">
+                                <h1>test</h1>
+                                <p>test</p>
+                                <p><a class="btn btn-lg btn-primary" href="#">test</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://via.placeholder.com/800x400" alt="Slide 3">
+                        <div class="container">
+                            <div class="carousel-caption text-end">
+                                <h1>test</h1>
+                                <p>test</p>
+                                <p><a class="btn btn-lg btn-primary" href="#">test</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </button>
+            </div>
+        </main>
+        <#include "model.html" encoding="UTF-8"/>
+        <script src="/js/index.js"></script>
     </body>
 </html>
