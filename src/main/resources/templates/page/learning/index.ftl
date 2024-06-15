@@ -9,5 +9,9 @@
     </head>
     <body>
         <#include "/page/menu.ftl" encoding="UTF-8"/>
+        <#if username?exists>
+            <#include "main.ftl" encoding="UTF-8"/>
+        <#else/>
+        </#if>
     </body>
 </html>
