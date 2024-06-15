@@ -24,7 +24,7 @@
                             <div class="carousel-caption text-start">
                                 <h1 class="text-black font_ccl">한문 수업 복습</h1>
                                 <p class="opacity-75 text-black font_ccl">학교 수업에서 나온 한문 수업을 복습해 봅시다</p>
-                                <p><a class="btn btn-lg btn-primary" href="#">복습하러 가기</a></p>
+                                <p><a class="btn btn-lg btn-primary" href="/learning">복습하러 가기</a></p>
                             </div>
                         </div>
                     </div>

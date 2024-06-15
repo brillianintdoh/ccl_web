@@ -13,6 +13,14 @@ public class Main {
         if(seed != null) {
             model.addAttribute("username", Data.nameGet(seed));
         }
-        return "page/index/main";
+        return "page/index/index";
     } 
+
+    @GetMapping("/learning")
+    public String learning(Model model, @SessionAttribute(name="seed", required=false) String seed) {
+        if(seed != null) {
+            model.addAttribute("username", Data.nameGet(seed));
+        }
+        return "page/learning/index";
+    }
 }
