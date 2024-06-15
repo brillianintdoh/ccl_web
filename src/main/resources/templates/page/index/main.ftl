@@ -22,8 +22,8 @@
                         <img src="/img/main_1.jpg">
                         <div class="container">
                             <div class="carousel-caption text-start">
-                                <h1 class="text-black">한문 수업 복습</h1>
-                                <p class="opacity-75">학교 수업에서 나온 한문 수업을 복습해 봅시다</p>
+                                <h1 class="text-black font_ccl">한문 수업 복습</h1>
+                                <p class="opacity-75 text-black font_ccl">학교 수업에서 나온 한문 수업을 복습해 봅시다</p>
                                 <p><a class="btn btn-lg btn-primary" href="#">복습하러 가기</a></p>
                             </div>
                         </div>
@@ -57,6 +57,17 @@
                 </button>
             </div>
         </main>
+
+        <div class='border_end py-2'></div>
+        <div class='end'>
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+                <li class="nav-item"><a href="https://school.cbe.go.kr/cbnu-h" class="nav-link px-2 text-body-secondary">Homepage</a></li>
+                <li class="nav-item"><a href="https://github.com/brillianintdoh" class="nav-link px-2 text-body-secondary">Developer</a></li>
+            </ul>
+            <p class="text-center text-body-secondary">palanghwi@gmail.com</p>
+        </div>
+
         <#include "model.html" encoding="UTF-8"/>
         <script src="/js/index.js"></script>
     </body>
