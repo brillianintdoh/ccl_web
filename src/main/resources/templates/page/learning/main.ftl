@@ -34,10 +34,10 @@
     <div class="card bgi-position-y-bottom bgi-position-x-end bgi-no-repeat bgi-size-cover min-h-250px h-xl-100 border-0 bg-gray-200i">
         <div class="card-body d-flex flex-column justify-content-center align-items-start ps-lg-15">  
             <h3 class="text-gray-800 d-flex fs-2x fw-bolder mb-2 mb-lg-4">
-                Good admin theme <br> is a tool of enthusiasm                                  
+                문제 풀어보기
             </h3>
             <div class="pt-2 pt-lg-4">
-                <a href="/good/pages/contact.html" class="btn btn-danger fw-semibold">Create App</a> 
+                <a href="/good/pages/contact.html" class="btn btn-danger fw-semibold">시작</a>
             </div>
         </div>
     </div>
