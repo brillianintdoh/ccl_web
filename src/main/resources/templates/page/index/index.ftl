@@ -5,6 +5,7 @@
         <meta charset="UTF-8">
         <meta name='viewport' content='width=device-width, initial-scale=1'>
         <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="/css/index.css">
         <link rel="icon" href="/img/icon.png">
         <script src="/js/boot.js"></script>
     </head>
@@ -67,8 +68,6 @@
             </ul>
             <p class="text-center text-body-secondary">palanghwi@gmail.com</p>
         </div>
-
-        <#include "model.html" encoding="UTF-8"/>
         <script src="/js/index.js"></script>
     </body>
 </html>

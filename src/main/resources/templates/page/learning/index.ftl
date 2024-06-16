@@ -5,13 +5,17 @@
         <meta charset="UTF-8">
         <meta name='viewport' content='width=device-width, initial-scale=1'>
         <link rel="icon" href="/img/icon.png">
+        <link rel="stylesheet" href="/css/main.css">
         <script src="/js/boot.js"></script>
     </head>
     <body>
         <#include "/page/menu.ftl" encoding="UTF-8"/>
+
         <#if username?exists>
             <#include "main.ftl" encoding="UTF-8"/>
         <#else/>
         </#if>
+
+        <script src="/js/index.js"></script>
     </body>
 </html>
