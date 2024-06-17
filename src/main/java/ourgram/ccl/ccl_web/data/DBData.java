@@ -24,5 +24,5 @@ public class DBData {
 
     public String getDBpass() {
         return DBpass;
-    }    
+    }
 }

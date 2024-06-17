@@ -14,17 +14,17 @@
                    <div class="d-flex fs-6 fw-semibold align-items-center">
                        <div class="bullet w-8px h-6px rounded-2 bg-danger me-3"></div>
                        <div class="text-gray-500 flex-grow-1 me-4">점수</div>
-                       <div class="fw-bolder text-gray-700 text-xxl-end">10점</div>
+                       <div class="fw-bolder text-gray-700 text-xxl-end">${score}점</div>
                    </div>
                 <div class="d-flex fs-6 fw-semibold align-items-center my-3">
                     <div class="bullet w-8px h-6px rounded-2 bg-primary me-3"></div>
                     <div class="text-gray-500 flex-grow-1 me-4">문제</div>
-                    <div class="fw-bolder text-gray-700 text-xxl-end">10/5</div>
+                    <div class="fw-bolder text-gray-700 text-xxl-end">10/${question}</div>
                 </div>
                 <div class="d-flex fs-6 fw-semibold align-items-center">
                     <div class="bullet w-8px h-6px rounded-2 me-3" style="background-color: #E4E6EF"></div>
                     <div class="text-gray-500 flex-grow-1 me-4">포인트</div>
-                    <div class=" fw-bolder text-gray-700 text-xxl-end">$45,257</div>
+                    <div class=" fw-bolder text-gray-700 text-xxl-end">$${points}</div>
                 </div>
             </div>
         </div>
