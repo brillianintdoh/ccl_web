@@ -62,7 +62,7 @@
         <div class='border_end py-2'></div>
         <div class='end'>
             <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+                <li class="nav-item"><a href="https://ccl.ourgram.co.kr" class="nav-link px-2 text-body-secondary">Home</a></li>
                 <li class="nav-item"><a href="https://school.cbe.go.kr/cbnu-h" class="nav-link px-2 text-body-secondary">Homepage</a></li>
                 <li class="nav-item"><a href="https://github.com/brillianintdoh" class="nav-link px-2 text-body-secondary">Developer</a></li>
             </ul>
