@@ -1,4 +1,4 @@
-<div class="col-xl-5 col-xxl-4 mb-xl-5 mb-xxl-10">
+<div class="col-xl-5 col-xxl-4 mb-xl-5 mb-xxl-10 d-inline-block">
     <div class="card card-flush h-xl-100">
         <div class="card-header pt-5">
             <div class="card-title d-flex flex-column">   
@@ -30,15 +30,18 @@
         </div>
     </div>
 </div>
+
 <div class="col-xl-7 col-xxl-8  mb-5 mb-xxl-10">
     <div class="card bgi-position-y-bottom bgi-position-x-end bgi-no-repeat bgi-size-cover min-h-250px h-xl-100 border-0 bg-gray-200i">
         <div class="card-body d-flex flex-column justify-content-center align-items-start ps-lg-15">  
             <h3 class="text-gray-800 d-flex fs-2x fw-bolder mb-2 mb-lg-4">
                 문제 풀어보기
             </h3>
-            <div class="pt-2 pt-lg-4">
+            <div class="pt-2 pt-lg-4 z-3">
                 <a href="/good/pages/contact.html" class="btn btn-danger fw-semibold">시작</a>
             </div>
         </div>
     </div>
 </div>
+
+<div class="background_img"></div>
