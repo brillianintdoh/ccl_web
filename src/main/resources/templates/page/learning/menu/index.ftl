@@ -39,10 +39,10 @@
                                                 <td>${title[1]}</td>
                                                 <td>${title[2]}</td>
                                                  <td>
-                                                    <button type="button" class="btn btn-success btn-xs" onclick="location.href='/learning/game/question/${title[3]}'">
+                                                    <button type="button" class="btn btn-success btn-xs" onclick="location.replace('/learning/question/${title[3]}')">
                                                         문제 풀기
                                                     </button>
-                                                    <button type="button" class="btn btn-danger btn-xs" onclick="location.href='/learning/game/question/${title[3]}?re=1'">
+                                                    <button type="button" class="btn btn-danger btn-xs" onclick="location.replace('/learning/question/${title[3]}?re=1')">
                                                         다시풀기
                                                     </button>
                                                     <button type="button" class="btn btn-info btn-xs" onclick="location.href='/edit/${title[0]}'">

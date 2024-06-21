@@ -1,10 +1,14 @@
 import "./htmx";
+import { learning } from "./page/learning";
 import { main } from "./page/main";
 const main_page = document.getElementById("main_page") as HTMLElement;
+const learning_page = document.getElementById("learning_page") as HTMLElement;
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("readystatechange", () => {
     if(main_page) {
         main();
+    }else if(learning_page) {
+        learning();
     }
 });
 

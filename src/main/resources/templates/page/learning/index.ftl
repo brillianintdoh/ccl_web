@@ -12,7 +12,7 @@
     <body>
         <#include "/page/menu.ftl" encoding="UTF-8"/>
 
-        <main class="main">
+        <main class="main" id="learning_page">
             <#if username?exists>
                 <#include "main.ftl" encoding="UTF-8"/>
             <#else/>
@@ -22,7 +22,11 @@
                 </div>
             </#if>
         </main>
-
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    window.data = ${time_at!'[0,0,0,0,0,0,0]'};
+});
+</script>
         <script src="/js/index.js"></script>
     </body>
 </html>
