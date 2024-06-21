@@ -23,8 +23,8 @@
             </#if>
         </main>
 <script>
-document.addEventListener("DOMContentLoaded", function() {
-    window.data = ${time_at!'[0,0,0,0,0,0,0]'};
+document.addEventListener("readystatechange", function() {
+    window.data = ${time_at!'[]'};
 });
 </script>
         <script src="/js/index.js"></script>
