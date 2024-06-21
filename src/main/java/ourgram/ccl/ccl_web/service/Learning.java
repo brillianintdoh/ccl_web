@@ -127,7 +127,7 @@ public class Learning {
         return "page/learning/menu/index";
     }
 
-    @GetMapping("/learning/menu/question/{id}")
+    @GetMapping("/learning/question/{id}")
     public String question(Model model, @PathVariable String id ,@SessionAttribute(name="seed", required=false) String seed) {
         if(seed == null) {
             return "error";
@@ -141,6 +141,6 @@ public class Learning {
 
         model.addAttribute("id", id);
         model.addAttribute("username", username);
-        return "page/learning/menu/question/index";
+        return "page/learning/question/index";
     }
 }
