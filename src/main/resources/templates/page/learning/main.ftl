@@ -48,8 +48,8 @@
     </div>
     <div class="row g-5 g-xxl-10">
         <div class="col-auto">
-            <h3>Total sells</h3>
-            <p class="text-body-tertiary lh-sm mb-0">Payment received across all channels</p>
+            <h3>공부량</h3>
+            <p class="text-body-tertiary lh-sm mb-0">요일마다 한번이라도 문제를 풀면 그래프에 값이 올라갑니다</p>
         </div>
          <div class="col-xl-5 col-xxl-4 mb-xl-5 mb-xxl-10 d-inline-block">
             <div class="card card-flush h-xl-100">
