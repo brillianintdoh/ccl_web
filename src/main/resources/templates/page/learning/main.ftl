@@ -38,7 +38,7 @@
                 문제 풀어보기
             </h3>
             <div class="pt-2 pt-lg-4 z-3">
-                <a href="/good/pages/contact.html" class="btn btn-danger fw-semibold">시작</a>
+                <a href="/learning/game" class="btn btn-danger fw-semibold">시작</a>
             </div>
         </div>
     </div>
