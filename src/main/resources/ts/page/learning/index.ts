@@ -16,7 +16,7 @@ export function learning() {
                 chart_data[new Date(data[i].toString()).getDay()] += 1;
             }
         }
-        const w = new Chart(ctx, {
+        new Chart(ctx, {
             type: "bar",
             data: {
                 labels: ["일", "월", "화", "수", "목", "금", "토"],
