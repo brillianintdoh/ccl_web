@@ -10,7 +10,7 @@ public class Data {
         username_DB.put(seed, username);
     }
 
-    public static String nameGet(String seed) {
+    public static String getName(String seed) {
         return username_DB.get(seed);
     }
 

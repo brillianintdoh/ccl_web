@@ -34,7 +34,7 @@ public class Learning {
                 e.printStackTrace();
             }
             String time_at = "[";
-            String username = Data.nameGet(seed);
+            String username = Data.getName(seed);
             String points = "null";
             String score = "null";
             String question = "null";
@@ -80,7 +80,7 @@ public class Learning {
 
     @GetMapping("/learning/menu")
     public String game(Model model, @SessionAttribute(name="seed", required=true) String seed) {
-        String username = Data.nameGet(seed);
+        String username = Data.getName(seed);
         ArrayList<ArrayList<String>> question = new ArrayList<>();
 
         try {
@@ -126,7 +126,7 @@ public class Learning {
 
     @GetMapping("/learning/question/{id}")
     public String question(Model model, @PathVariable String id ,@SessionAttribute(name="seed", required=true) String seed) {
-        String username = Data.nameGet(seed);
+        String username = Data.getName(seed);
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
         } catch (ClassNotFoundException e) {

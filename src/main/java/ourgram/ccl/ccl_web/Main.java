@@ -12,15 +12,14 @@ public class Main {
     @GetMapping("/")
     public String main(Model model, @SessionAttribute(name="seed", required=false) String seed) {
         if(seed != null) {
-            model.addAttribute("username", Data.nameGet(seed));
+            model.addAttribute("username", Data.getName(seed));
         }
         return "page/index/index";
     } 
 
     @GetMapping("/account")
     public String account(Model model, @SessionAttribute(name="seed", required=true) String seed) {
-        String username = Data.nameGet(seed);
-        model.addAttribute("username", username);
+        model.addAttribute("username", Data.getName(seed));
         return "page/account";
     }
 }
