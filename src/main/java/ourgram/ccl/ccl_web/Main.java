@@ -16,4 +16,11 @@ public class Main {
         }
         return "page/index/index";
     } 
+
+    @GetMapping("/account")
+    public String account(Model model, @SessionAttribute(name="seed", required=true) String seed) {
+        String username = Data.nameGet(seed);
+        model.addAttribute("username", username);
+        return "page/account";
+    }
 }

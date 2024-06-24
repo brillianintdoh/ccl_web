@@ -79,10 +79,7 @@ public class Learning {
     }
 
     @GetMapping("/learning/menu")
-    public String game(Model model, @SessionAttribute(name="seed", required=false) String seed) {
-        if(seed == null) {
-            return "error";
-        }
+    public String game(Model model, @SessionAttribute(name="seed", required=true) String seed) {
         String username = Data.nameGet(seed);
         ArrayList<ArrayList<String>> question = new ArrayList<>();
 
@@ -128,10 +125,7 @@ public class Learning {
     }
 
     @GetMapping("/learning/question/{id}")
-    public String question(Model model, @PathVariable String id ,@SessionAttribute(name="seed", required=false) String seed) {
-        if(seed == null) {
-            return "error";
-        }
+    public String question(Model model, @PathVariable String id ,@SessionAttribute(name="seed", required=true) String seed) {
         String username = Data.nameGet(seed);
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");

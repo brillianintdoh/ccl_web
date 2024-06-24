@@ -14,7 +14,7 @@
             <i class="button_click bi bi-person h2" data-bs-toggle="dropdown" aria-expanded="false"></i>
             <ul class="dropdown-menu">
                 <li><p class="dropdown-item-text h5">${username}</p></li>
-                <li><a class="dropdown-item button_click">내 계정</a></li>
+                <li><a class="dropdown-item button_click" href="/account">내 계정</a></li>
                 <li><a class="dropdown-item button_click" hx-post="/sing_out" hx-include="[name=username]" hx-trigger="click" hx-swap="afterend">로그아웃</a></li>
             </ul>
         <#else/>
