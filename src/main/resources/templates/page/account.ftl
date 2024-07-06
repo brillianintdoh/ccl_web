@@ -31,7 +31,7 @@
                 <hr>
                 <div class="dropdown">
                     <input type='hidden' name='username' value="${username}">
-                    <a href="#" class="d-flex align-items-center link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="d-flex align-items-center link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                         <strong>${username}</strong>
                     </a>
                     <ul class="dropdown-menu text-small shadow">
