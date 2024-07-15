@@ -14,7 +14,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.SessionAttribute;
-
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpSession;
 import ourgram.ccl.ccl_web.data.DBData;
@@ -23,12 +22,9 @@ import ourgram.ccl.ccl_web.data.SeedCreate;
 
 @RestController
 public class Login {
-    private DBData db;
 
     @Autowired
-    public Login(DBData db) {
-        this.db = db;
-    }
+    private DBData db;
 
     @PostMapping("/login")
     public ResponseEntity<String> login_post(HttpServletRequest req, @RequestParam(name="username", required=true) String username, @RequestParam(name="password", required=true) String password) {

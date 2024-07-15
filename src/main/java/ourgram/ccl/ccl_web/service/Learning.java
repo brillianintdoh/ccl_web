@@ -18,12 +18,9 @@ import ourgram.ccl.ccl_web.data.Data;
 
 @Controller
 public class Learning { 
-    private DBData db;
 
     @Autowired
-    public Learning(DBData db) {
-        this.db = db;
-    }
+    private DBData db;
 
     @GetMapping("/learning")
     public String learning(Model model, @SessionAttribute(name="seed", required=false) String seed) {
@@ -79,7 +76,7 @@ public class Learning {
     }
 
     @GetMapping("/learning/menu")
-    public String game(Model model, @SessionAttribute(name="seed", required=true) String seed) {
+    public String menu(Model model, @SessionAttribute(name="seed", required=true) String seed) {
         String username = Data.getName(seed);
         ArrayList<ArrayList<String>> question = new ArrayList<>();
 

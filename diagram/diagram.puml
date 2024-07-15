@@ -1,0 +1,78 @@
+@startuml diagram
+title ccl_web 프로젝트
+package server {
+    label run [{{
+        title 서버 시작 시 spring boot 처리
+        class CclWebApplication {
+            +main() : 실행함수
+        }
+
+        class ServletInitializer {
+            +configure() : servlet함수
+        }
+        
+        ServletInitializer --> CclWebApplication : main 함수로 맵핑
+    }}]
+
+    label mapPing [{{
+        title url 경로에 따라 연결되는 페이지와 요청 처리
+        class Main {
+            +main() : 메인페이지
+            +account() : 설정페이지
+        }
+
+        class Login {
+            +login_post() : 로그인처리
+            +sign_out() : 로그아웃처리
+            +password_change() : 비번변경
+        }
+
+        class Learning {
+            +learning() : 학습페이지
+            +menu() : 학습목록_페이지
+            +question() : 문제페이지
+        }
+
+        Main : / 경로와 /account 경로에 따라 페이지 맵핑
+        Login : /login 경로와 /sign_out , /password_change에 경로의 따라 요청처리 맵핑
+        Learning : /learning 경로와 /menu , /question 경로에 따라 페이지 맵핑
+    }}]
+
+    label data [{{
+        title 서버에 중요한 변수,데이터 저장 및 가져오기
+        class Data {
+            +Map username_DB
+            +userPush() : 유저데이터를_변수에_저장_즉_로그인
+            +getName() : 데이터_가져오기
+            +userRemove() : 유저데이터_삭제_즉_로그이웃
+        }
+
+        class DBData() {
+            +getDBurl()
+            +getDBuser()
+            +getDBpass()
+        }
+
+        Data : (서버에 로그인 정보를 저장함(임시로) 추후 db에도 저장할 예정)
+        DBData : mysql(DB)에 연결할 값들을 가져옴 추후 (jdbc로 바꿀 예정)
+    }}]
+
+    mapPing -> data : 데이터를 가져오기 위해 호출
+    data -> mapPing : 데이터를 가져온 후 mapPing에 전달
+}
+
+package client {
+    actor "사용자" as user
+    user --> server : 서버에 요청 (웹사이트 연결)
+    server --> user : 서버에서 응답 (웹사이트 연결)
+
+    label fun [{{
+        title typescript
+        
+        rectangle "readystatechange : 페이지 준비완료되면 현재 페이지의 따라 함수호출" as ready
+    }}]
+
+    user -> fun : 서버에서 받은 응답으로 js 실행
+}
+
+@enduml

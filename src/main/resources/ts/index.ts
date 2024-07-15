@@ -1,9 +1,11 @@
 import "./htmx";
 import { account } from "./page/account";
 import { learning } from "./page/learning";
+import query from "./page/learning/query";
 const main_page = document.getElementById("main_page") as HTMLElement;
 const learning_page = document.getElementById("learning_page") as HTMLElement;
 const account_page = document.getElementById("account_page") as HTMLElement;
+const query_page = document.getElementById("query_page") as HTMLElement;
 
 document.addEventListener("readystatechange", () => {
     if(main_page) {
@@ -11,6 +13,8 @@ document.addEventListener("readystatechange", () => {
         learning();
     }else if(account_page) {
         account();
+    }else if(query_page) {
+        new query();
     }
 });
 
